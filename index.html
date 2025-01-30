@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanskar singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <h1><a href="#">Sanskar Singh</a></h1>
+            <button class="toggle-btn" id="toggle-btn">&#9776;</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Sanskar Singh, a passionate Web Developer working at
+                Einfratech system as a secure web developer</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Sanskar Singh" class="profile-img">
+        <div class="about-container">
+               <div class="bio">
+                <p>I'm Sanskar Singh, a web developer to enhance the creativity of world.
+                     I specialize in front-end and backend technologies and continuously 
+                     seek to expand my knowledge and skills.</p>
+                <h3>Skills</h3>
+                <div class="skills">
+                    <div class="skill">
+                        <h4>HTML & CSS</h4>
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>React</h4>
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="Project 1.png" alt="Project 1">
+                <h3>PROJECT 1 -TO DO LIST</h3>
+                <p>A to-do list project description is a document that outlines the tasks 
+                    that need to be completed for a project. It can include the tasks, their 
+                    priorities, and deadlines. The goal of a to-do list project is to help ensure 
+                    that all tasks are completed and the project is finished on time. </p>
+                <a 
+                 href="https://drive.google.com/drive/folders/1re3n3yOJwzcNzrCza2EGgvMl2QZ-vy1W?usp=drive_link"
+                 target="_blank">View Project
+                </a>
+            </div>
+            <div class="project">
+                <img src="project 2.jpg" alt="Project 2">
+                <h3>Project 2 -JARVIS AI TOOL</h3>
+                <p>Project Jarvis is a new initiative by the search engine giant that goes
+                     beyond traditional AI capabilities. Unlike today's AI assistants, which
+                     respond to commands, Jarvis is designed to autonomously navigate your 
+                     web browser, make decisions, and perform tasks on your behalf.</p>
+                <a 
+                 href="https://drive.google.com/file/d/1M793h1R0kqZw609CoSqnIpoUu_zGLm4D/view?usp=drive_link"
+                 target="_blank">View Project
+                </a>
+            </div>
+            <div class="project">
+                <img src="project 3.png" alt="Project 3">
+                <h3>Project 3 -HOUSE PRICE PREDICTION</h3>
+                <p>A "house price prediction" is a system that uses machine learning algorithms
+                     to estimate the potential selling price of a house based on various factors
+                      like its size, location, number of bedrooms, condition, and neighborhood 
+                      amenities.</p>
+                <a 
+                 href="https://drive.google.com/drive/folders/1QJEDlvOHTNHS0cmiix34zrU_h_2jWldK?usp=drive_link"
+                 target="_blank">View Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="validateForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/SanskarSingh142002" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sanskar-singh-75bb45284" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+</body>
+</html>
